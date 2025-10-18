@@ -1,0 +1,16 @@
+{
+  "name": "testcar",
+  "version": "1.0.0",
+  "main": "car.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "jest": "^30.2.0"
+  }
+}
