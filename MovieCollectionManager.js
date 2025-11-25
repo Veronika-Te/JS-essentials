@@ -15,7 +15,6 @@ class Movie {
     return this.#id;
   }
 
-  //add that rating is integer between 0 and 10
   get rating() {
     return this._rating;
   }
