@@ -11,7 +11,6 @@ class Movie {
     this.watched = watched;
   }
 
-  //READ-ONLY
   get id() {
     return this.#id;
   }
@@ -159,11 +158,17 @@ class MovieLibrary {
 }
 
 if (require.main === module) {
-
-  const m1 = new Movie(0,"Inception", 2010, ["Sci-Fi"], 9, true);
+  const m1 = new Movie(0, "Inception", 2010, ["Sci-Fi"], 9, true);
   const m2 = new Movie(0, "Avatar", 2009, ["Fantasy"], 8, false);
   const m3 = new Movie(0, "Interstellar", 2014, ["Sci-Fi", "Drama"], 10, true);
-  const m4 = new Movie(0,"The Dark Knight",2008,["Action", "Crime"],9,true);
+  const m4 = new Movie(
+    0,
+    "The Dark Knight",
+    2008,
+    ["Action", "Crime"],
+    9,
+    true
+  );
   const m5 = new Movie(0, "Pulp Fiction", 1994, ["Crime", "Drama"], 9, false);
 
   const library = new MovieLibrary();
@@ -178,10 +183,9 @@ if (require.main === module) {
   console.log(library.getMoviesByGenre("Drama"));
   console.log(library.getStatistics());
 
-
   console.log(m1.id);
   console.log(m2.id);
   console.log(m3.id);
 }
 
-module.exports = { Movie, MovieLibrary }; 
+module.exports = { Movie, MovieLibrary };
